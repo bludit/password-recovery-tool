@@ -59,7 +59,13 @@ if (file_put_contents($userDatabaseFile, $data, LOCK_EX)) {
 	echo 'Username: admin'.PHP_EOL;
 	echo 'New password: '.$password.PHP_EOL;
 	echo PHP_EOL;
-	echo '>> Delete this file now, do not keep it on the system <<'.PHP_EOL;
+
+	if (unlink(__FILE__)===false) {
+		echo '>> Delete this file now, do not keep it on the system <<'.PHP_EOL;
+	} else {
+		echo '>> The file recovery.php was deleted automatically for security reasons. <<'.PHP_EOL;
+	}
+
 } else {
 	die('Error when try to save the new database file.');
 }
