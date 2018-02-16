@@ -9,7 +9,7 @@ With this tool, you can recover the password of the user `admin`.
 5. Log in to the admin panel with the user `admin` and the new password generated.
 6. Delete the file `recovery.php` from your Bludit
 
-## [EXPERT] How to recover the password via the command line
+## [ADVANCED] How to recover the password via the command line
 You can execute the php file `recovery.php` via the command line.
 ```
 # Go to the directory where you have installed Bludit
