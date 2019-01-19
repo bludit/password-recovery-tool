@@ -1,10 +1,10 @@
 # Bludit Password Recovery Tool
-With this tool, you can recover the password of the user `admin`.
+This tool allow you to recover the password for the `admin` user.
 
 ## How to recover the password
 1. Download the file `recovery.php`.
 2. Upload to your Bludit installation, on the root folder.
-3. Open the file with your browser, the url is like this `https://example.com/recovery.php`, change the `example.com` for your domain.
+3. Open the file with your browser, for example: `https://example.com/recovery.php`, change the `example.com` for your domain.
 4. A new password for the `admin` is generated and displayed on the browser.
 5. Log in to the admin panel with the user `admin` and the new password generated.
 6. Delete the file `recovery.php` from your Bludit
